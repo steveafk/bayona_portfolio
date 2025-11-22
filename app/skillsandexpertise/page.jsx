@@ -40,7 +40,7 @@ const skillsData = [
 const SkillsandExpertise = () => {
   return (
     <div className="py-16 px-4 md:px-16 bg-transparent">
-      <h2 className="text-4xl font-bold text-center mb-12">Skills & Expertise</h2>
+      <h2 className="text-4xl font-bold text-center mb-12">SKILLS & EXPERTISE</h2>
       <div className="grid gap-10 md:grid-cols-2">
         {skillsData.map((category, index) => (
           <div key={index}>

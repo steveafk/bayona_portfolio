@@ -4,7 +4,6 @@ import { SiGmail } from "react-icons/si";
 
 const AboutMe = () => {
   return (
-    // ✅ Removed min-h-screen — now uses natural height
     <div className="w-full flex flex-col items-center justify-start p-6 text-white">
       <div className="flex flex-col md:flex-row gap-8 w-full max-w-6xl">
 
@@ -26,7 +25,7 @@ const AboutMe = () => {
             but also engaging for users.
           </p>
 
-          {/* SOCIAL ICONS */}
+          {/* ANG MGA SOCIAL ICONS */}
           <div className="flex space-x-6 mt-6 justify-center">
             <a
               href="https://github.com/steveafk"
@@ -77,7 +76,6 @@ const AboutMe = () => {
         </div>
       </div>
 
-      {/* Optional: Add a small bottom margin for breathing room */}
       <div className="mt-12"></div>
     </div>
   );

@@ -27,15 +27,15 @@ const RootHeader = () => {
   return (
     <div className="w-full flex justify-center mt-6 px-4">
       <div className="bg-gray-900 text-white rounded-xl shadow-lg p-4 w-full max-w-6xl flex flex-col">
-        {/* Main Nav Row */}
+
         <div className="flex items-center justify-between">
-          {/* Logo */}
+
           <Link href="/home" className="text-2xl font-bold hover:text-gray-300 transition">
             <span className="text-white">steve</span>
             <span className="text-blue-500">afk</span>
           </Link>
 
-          {/* Desktop Nav */}
+          {/* DESKTOP NAV */}
           <nav className="hidden md:flex items-center space-x-4">
             {navItems.map((item) => (
               <Link
@@ -53,7 +53,7 @@ const RootHeader = () => {
             ))}
           </nav>
 
-          {/* "Let's Talk" CTA — also highlight if on /contact */}
+          {/* SA MAY "LETS TALK" */}
           <Link
             href="/contact"
             className={`px-4 py-2 rounded-lg flex items-center space-x-2 font-semibold text-sm transition whitespace-nowrap shadow-md
@@ -67,13 +67,13 @@ const RootHeader = () => {
           </Link>
         </div>
 
-        {/* Mobile Nav */}
+        {/* MOBILE NAV */}
         <nav className="mt-4 flex md:hidden overflow-x-auto pb-2 space-x-4">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`flex flex-col items-center space-y-1 flex-shrink-0 px-2 py-2 rounded transition
+              className={`flex flex-col items-center space-y-1 shrink-0 px-2 py-2 rounded transition
                 ${isActive(item.href)
                   ? "text-blue-400 bg-gray-500/50"
                   : "text-gray-300 hover:text-white"}

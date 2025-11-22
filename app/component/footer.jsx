@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-gray-900 text-gray-300 py-10 px-6 mt-16">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
 
-        {/* Left Section */}
+        {/* SA WALA NGA SECTION */}
         <div>
           <h3 className="text-xl font-semibold mb-3">Steve Kurt Bayona</h3>
           <p className="text-sm text-gray-400">
@@ -15,7 +15,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Middle Navigation */}
+        {/* MID SECTION NAV */}
         <div>
           <h4 className="text-lg font-semibold mb-3">Quick Links</h4>
           <ul className="space-y-2 text-sm">
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom */}
+      {/* DALOM */}
       <div className="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-5">
         © 2025 Steve Kurt Bayona. All rights reserved.
       </div>

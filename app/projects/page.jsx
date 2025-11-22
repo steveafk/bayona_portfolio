@@ -2,31 +2,31 @@ import Image from "next/image";
 
 const projectsData = [
   {
-    // FITNESS MULTIVERSE CARD
-    title: "Fitness Multiverse",
+    // MY FAV PLACES CARD
+    title: "My Favorite Places",
     description:
-      "Fitness Multiverse is a sleek web UI showcasing a modern fitness platform. It highlights user-friendly interfaces for tracking workouts, memberships, and wellness activities. Designed for fitness enthusiasts and gym admins who want a visually appealing and intuitive platform.",
-    technologies: ["Next.js", "Tailwind CSS", "React", "Figma (UI Design)"],
-    github: "https://github.com/yourusername/fitness-multiverse",
-    live: "https://fitness-multiverse.vercel.app",
-    image: "/fitness_multiverse.png",
+      "This app allows users to keep a personalized collection of their favorite places.Users can input any location they like, add notes, and even take and store pictures. It’s a simple and interactive way to remember and share special spots, whether it’s a cozy café, a scenic park, or a hidden gem in the city.",
+    technologies: ["Flutter", "Dart", "Firebase"],
+    github: "https://github.com/steveafk/myfaveplaces",
+    live: "http://localhost:53824/",
+    image: "/myfaveplaces.png",
   },
   {
-    // SMARTTOUR CARD
-    title: "SmartTour Antique",
+    // SHOPPING LIST CARD
+    title: "Shopping List",
     description:
-      "An AI-powered mobile-based tourism guide for Antique province. It helps tourists find attractions, hotels, and restaurants with interactive maps and AI recommendations.",
-    technologies: ["Next.js", "Tailwind CSS", "React", "Node.js", "OpenAI API"],
-    github: "https://github.com/yourusername/smarttour-antique",
-    live: "https://smarttour-antique.vercel.app",
-    image: "/smarttour.png",
+      "This app helps users organize their shopping efficiently. Users can create a list of items they need and easily select the ones they want to purchase. It’s a practical and user-friendly tool for planning trips to the store, ensuring nothing is forgotten, and making shopping more organized and stress-free.",
+    technologies: ["Flutter", "Dart", "Firebase"],
+    github: "https://github.com/steveafk/shopping_list",
+    live: "http://localhost:52442/",
+    image: "/shopping_list.png",
   },
   {
     // PERSONAL TRAINER CARD
     title: "Personal Trainer",
     description:
       "A web application for managing gym memberships, wellness tracking, and activity scheduling. It supports dual-level membership and detailed activity analytics.",
-    technologies: ["Next.js", "Tailwind CSS", "C#", "SQL Server"],
+    technologies: [".Net Framework", "C#", "SQL Server"],
     github: "https://github.com/yourusername/personal-trainer-app",
     live: "https://personal-trainer-app.vercel.app",
     image: "/personal_trainer.png",
@@ -36,7 +36,7 @@ const projectsData = [
 const Projects = () => {
   return (
     <div className="bg-transparent py-16 px-4 md:px-16">
-      <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
+      <h2 className="text-4xl font-bold text-center mb-12">PROJECTS</h2>
 
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
         {projectsData.map((project, index) => (
@@ -58,7 +58,7 @@ const Projects = () => {
 
             <p className="text-white mb-4">{project.description}</p>
 
-            <p className="text-sm text-gray-500 mb-4">
+            <p className="text-sm text-white mb-4">
               <strong>Technologies:</strong> {project.technologies.join(", ")}
             </p>
 
