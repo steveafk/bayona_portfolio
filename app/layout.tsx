@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import RootHeader from '@/app/component/header';
+import Footer from '@/app/component/footer';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
+export const metadata: Metadata = { 
   title: "Steve Kurt Bayona Portfolio",
   description: "This will be my first Portfolio",
 };
@@ -32,6 +33,7 @@ export default function RootLayout({
         <RootHeader/>
 
         {children}
+        <Footer/>
       </body>
     </html>
   );
