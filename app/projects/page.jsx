@@ -4,19 +4,19 @@ const projectsData = [
   {
     title: "My Favorite Places",
     description:
-      "This app allows users to keep a personalized collection of their favorite places.Users can input any location they like, add notes, and even take and store pictures.",
+      "This app allows users to keep a personalized collection of their favorite places. Users can input any location they like, add notes, and even take and store pictures.",
     technologies: ["Flutter", "Dart", "Firebase"],
     github: "https://github.com/steveafk/myfaveplaces",
-    live: "http://localhost:53824/",
-    image: "/myfaveplaces.png", // FIXED
+    live: "https://myfaveplaces.vercel.app/",
+    image: "/myfaveplaces.png", // Make sure this image is in the public folder
   },
   {
     title: "Shopping List",
     description: "This app helps users organize their shopping efficiently.",
     technologies: ["Flutter", "Dart", "Firebase"],
     github: "https://github.com/steveafk/shopping_list",
-    live: "http://localhost:52442/",
-    image: "/shopping_list.png", // FIXED
+    live: "https://shopping-list-brown.vercel.app/",
+    image: "/shopping_list.png",
   },
   {
     title: "Personal Trainer",
@@ -24,7 +24,7 @@ const projectsData = [
       "A web application for managing gym memberships and wellness tracking.",
     technologies: [".Net Framework", "C#", "SQL Server"],
     github: "https://github.com/steveafk/PERSONAL_TRAINER_INC",
-    live: "https://personal-trainer-app.vercel.app",
+    live: "https://personal-trainer-inc.vercel.app/",
     image: "/personal_trainer.png",
   },
 ];
