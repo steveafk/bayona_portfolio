@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  FaHome,
   FaUser,
   FaEnvelope,
   FaProjectDiagram,
@@ -17,7 +16,6 @@ const RootHeader = () => {
   const isActive = (path) => pathname === path;
 
   const navItems = [
-    { href: "/home", label: "Home", icon: <FaHome size={20} /> },
     { href: "/aboutme", label: "About Me", icon: <FaUser size={20} /> },
     { href: "/contact", label: "Contact", icon: <FaEnvelope size={20} /> },
     { href: "/projects", label: "Projects", icon: <FaProjectDiagram size={20} /> },
@@ -30,7 +28,7 @@ const RootHeader = () => {
 
         <div className="flex items-center justify-between">
 
-          <Link href="/home" className="text-2xl font-bold hover:text-gray-300 transition">
+          <Link href="/" className="text-2xl font-bold hover:text-gray-300 transition">
             <span className="text-white">steve</span>
             <span className="text-blue-500">afk</span>
           </Link>
