@@ -51,7 +51,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://facebook.com/yourusername"
+              href="https://www.facebook.com/steve.kurt.bayona.2024"
               target="_blank"
               className="hover:text-gray-500 transition"
             >
@@ -59,7 +59,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://instagram.com/tebcdef"
+              href="https://www.instagram.com/tebcdef/?next=%2Ftebcdef%2F"
               target="_blank"
               className="hover:text-gray-500 transition"
             >

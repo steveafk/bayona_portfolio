@@ -42,7 +42,7 @@ const AboutMe = () => {
               <SiGmail size={28} />
             </a>
             <a
-              href="https://facebook.com/steve.kurt.bayona.2024"
+              href="https://www.facebook.com/steve.kurt.bayona.2024"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300 transition"
@@ -50,7 +50,7 @@ const AboutMe = () => {
               <FaFacebook size={28} />
             </a>
             <a
-              href="https://instagram.com/tebcdef"
+              href="https://www.instagram.com/tebcdef/?next=%2Ftebcdef%2F"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300 transition"
