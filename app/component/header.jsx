@@ -23,7 +23,7 @@ const RootHeader = () => {
   ];
 
   return (
-    <div className="w-full flex justify-center mt-6 px-4">
+    <div className="w-full flex justify-center px-4 sticky top-0 z-50 bg-gray-900/80 backdrop-blur-md py-4">
       <div className="bg-gray-900 text-white rounded-xl shadow-lg p-4 w-full max-w-6xl flex flex-col">
 
         <div className="flex items-center justify-between">
@@ -40,9 +40,11 @@ const RootHeader = () => {
                 key={item.href}
                 href={item.href}
                 className={`flex items-center space-x-2 font-semibold px-4 py-2 rounded-lg transition
-                  ${isActive(item.href)
-                    ? "bg-gray-500 text-white shadow-md"
-                    : "hover:text-gray-300 text-gray-200"}
+                  ${
+                    isActive(item.href)
+                      ? "bg-gray-500 text-white shadow-md"
+                      : "hover:text-gray-300 text-gray-200"
+                  }
                 `}
               >
                 {item.icon}
@@ -51,13 +53,15 @@ const RootHeader = () => {
             ))}
           </nav>
 
-          {/* SA MAY "LETS TALK" */}
+          {/* LET'S TALK */}
           <Link
             href="/contact"
             className={`px-4 py-2 rounded-lg flex items-center space-x-2 font-semibold text-sm transition whitespace-nowrap shadow-md
-              ${isActive("/contact")
-                ? "bg-blue-600 text-white"
-                : "bg-blue-500 hover:bg-blue-600 text-white"}
+              ${
+                isActive("/contact")
+                  ? "bg-blue-600 text-white"
+                  : "bg-blue-500 hover:bg-blue-600 text-white"
+              }
             `}
           >
             <FaCommentAlt size={16} />
@@ -72,13 +76,17 @@ const RootHeader = () => {
               key={item.href}
               href={item.href}
               className={`flex flex-col items-center space-y-1 shrink-0 px-2 py-2 rounded transition
-                ${isActive(item.href)
-                  ? "text-blue-400 bg-gray-500/50"
-                  : "text-gray-300 hover:text-white"}
+                ${
+                  isActive(item.href)
+                    ? "text-blue-400 bg-gray-500/50"
+                    : "text-gray-300 hover:text-white"
+                }
               `}
             >
               {item.icon}
-              <span className="text-xs mt-1">{item.label === "About Me" ? "About" : item.label}</span>
+              <span className="text-xs mt-1">
+                {item.label === "About Me" ? "About" : item.label}
+              </span>
             </Link>
           ))}
         </nav>
