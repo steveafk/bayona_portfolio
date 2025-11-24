@@ -2,30 +2,30 @@ import Image from "next/image";
 
 const projectsData = [
   {
-    title: "My Favorite Places",
+    title: "My To-Do List",
     description:
-      "This app allows users to keep a personalized collection of their favorite places. Users can input any location they like, add notes, and even take and store pictures.",
-    technologies: ["Flutter", "Dart", "Firebase"],
-    github: "https://github.com/steveafk/myfaveplaces",
-    live: "https://myfaveplaces.vercel.app/",
-    image: "/myfaveplaces.png", // Make sure this image is in the public folder
+      "A simple web-based application that helps users organize their daily tasks. Users can add, edit, and delete tasks to keep track of what needs to be done efficiently.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/steveafk/to-do-list",
+    live: "https://to-do-list-gold-sigma.vercel.app/",
+    image: "/to-do-list.png",
   },
   {
-    title: "Shopping List",
-    description: "This app helps users organize their shopping efficiently.",
-    technologies: ["Flutter", "Dart", "Firebase"],
-    github: "https://github.com/steveafk/shopping_list",
-    live: "https://shopping-list-brown.vercel.app/",
-    image: "/shopping_list.png",
+    title: "Iloilo Tourist Spots",
+    description: "A website showcasing popular tourist destinations in Iloilo. Users can explore different spots, view images, and learn interesting facts about each location.",
+    technologies: ["HTML", "CSS"],
+    github: "https://github.com/steveafk/tourists-website",
+    live: "https://tourists-website.vercel.app/",
+    image: "/iloilo-tourist-spots.png",
   },
   {
-    title: "Personal Trainer",
+    title: "Reaction Time Game",
     description:
-      "A web application for managing gym memberships and wellness tracking.",
-    technologies: [".Net Framework", "C#", "SQL Server"],
-    github: "https://github.com/steveafk/PERSONAL_TRAINER_INC",
-    live: "https://personal-trainer-inc.vercel.app/",
-    image: "/personal_trainer.png",
+      "An interactive game that tests how quickly users can respond to visual cues. It helps improve focus, hand-eye coordination, and reaction speed while providing a fun challenge.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/steveafk/simple-game",
+    live: "https://simple-game-two.vercel.app/",
+    image: "/simple-game.png",
   },
 ];
 
@@ -40,7 +40,6 @@ const Projects = () => {
             key={index}
             className="bg-gray-500 rounded-2xl shadow-lg p-6 flex flex-col"
           >
-            {/* Image fully visible, no cropping */}
             <div className="w-full mb-4">
               <Image
                 src={project.image}
